@@ -28,6 +28,7 @@ public class Locators {
 		driver.findElement(By.xpath("//div[@class='forgot-pwd-btn-conainer']/button[1]")).click(); // parent to child transverse
 		driver.findElement(By.cssSelector("#inputUsername")).sendKeys("rahul");
 		driver.findElement(By.cssSelector("input[type*='pass']")).sendKeys("rahulshettyacademy"); //CSS using partial text
+		Thread.sleep(1000);
 		driver.findElement(By.id("chkboxOne")).click();
 		driver.findElement(By.id("chkboxTwo")).click();
 		driver.findElement(By.xpath("//button[contains(@class,'submit')]")).click(); //xpath using partial text
